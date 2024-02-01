@@ -19,7 +19,8 @@ It has two categories a user can chose from to explore:
 
 **Jonathan Fajardo** - Fitness page
 
-**Milind Joshi** Oversee project and help team members
+**Milind Joshi**  -  Smile page
+1. https://icanhazdadjoke.com/
 
 
 ## Credit
