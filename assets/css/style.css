@@ -27,7 +27,6 @@ body {
     font-size: 50px;
     padding: 20px;
     text-align: center;
-    border: 5px solid purple;
     border-radius: 3px;
     font-weight: 600;
 }
@@ -52,25 +51,6 @@ body {
 
 .navlink li:hover {
     background-color: bisque;
-}
-
-.content {
-    background-color: beige;
-    padding: 20px;
-    border: 5px solid lavender;
-    border-radius: 10px;
-    width: auto;
-    height: 1000px;
-}
-
-.content img {
-    border: 5px solid purple;
-    padding: 5px;
-    background-color: beige;
-}
-
-.content img:hover {
-    background-color: lavender;
 }
 
 footer {
