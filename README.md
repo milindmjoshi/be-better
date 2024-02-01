@@ -3,10 +3,11 @@ The purpose of this application is to increase positivity, empower self growth, 
 
 ## Description
 Be better is a web application that inspires, motivates, and provides outlets for users to explore new areas, activities, and thought. 
-It has two categories a user can chose from to explore:
+It has categories a user can chose from to explore:
 
 1. Inspire
 2. Fitness
+3. Smile
 
 
 
