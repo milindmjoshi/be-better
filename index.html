@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title> Be Better </title>
 </head>
 
@@ -14,31 +15,36 @@
         <h1><strong> Be Better! </strong></h1>
     </header>
 
-    <nav class="navlink">
-        <ul>
-            <li><a href="#Inspire"> * Inpsire * </a></li>
-            <li><a href="#Move"> * Move * </a></li>
-            <li><a href="#Laugh"> * Laugh * </a></li>
-            <li><a href="#Placeholder"> * Placeholder * </a></li>
-        </ul>
-    </nav>
-
-    <div class="content">
-        <h3> * Inspire * </h3>
-            <img src="./assets/images/placeholder.png" alt="placeholder" >
-        <h3> * Move * </h3>
-            <img src="./assets/images/placeholder.png" alt="placeholder" >
-        <h3> * Laugh * </h3>
-                <img src="./assets/images/placeholder.png" alt="placeholder" >
-        <h3> * Placeholder * </h3>
-            <img src="./assets/images/placeholder.png" alt="placeholder" >
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-warning">
+        <p class="title">Inspire</p>
+        <p class="subtitle"> Something to lift spirits</p>
+        </figure>
+      </article>
     </div>
-
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-warning">
+        <p class="title">Smile</p>
+        <p class="subtitle dadjoke">Something to make the spirits last</p>
+        </figure>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-warning">
+        <p class="title">Move</p>
+        <p class="subtitle"> Something to give the spirits a healthy home</p>
+        <div id ="video-container"></div>
+      </article>
+    </div>
     <footer>
         <h4> Product of the 'Numbers Team' </h4>
         <h5> Made in 2024 </h5>
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
     <script src="./assets/scripts/main.js"></script>
+    <script src="./assets/scripts/joke.js"></script>
+    <script src="./assets/scripts/fitness.js"></script>
 </body>
 </html>

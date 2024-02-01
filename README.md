@@ -3,31 +3,26 @@ The purpose of this application is to increase positivity, empower self growth, 
 
 ## Description
 Be better is a web application that inspires, motivates, and provides outlets for users to explore new areas, activities, and thought. 
-It has four categories a user can chose from to explore:
+It has categories a user can chose from to explore:
 
-1. Fuzzy Friends
-2. Inspire
-3. Fitness
-4. Travel 
+1. Inspire
+2. Fitness
+3. Smile
+
 
 
 ## Group Members
 
-Tristan Magee - Application landing page with links to pages
-
-**Milind Joshi** - Fuzzy Friends page
-1.
-
+**Tristan Magee , Christian Vallejos** - Application landing page with links to pages
+ 
 **Brittany Montanye** :star2: :metal: - Inspire page
 1. http://www.boredapi.com/api/activity
 
 **Jonathan Fajardo** - Fitness page
 
-1. 
+**Milind Joshi**  -  Smile page
+1. https://icanhazdadjoke.com/
 
-**Christian Vallejos** - Travel page
-
-1. 
 
 ## Credit
 
