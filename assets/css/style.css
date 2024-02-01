@@ -34,15 +34,15 @@ body {
 .navlink ul {
     background-color: lavender;
     overflow: hidden;
-    padding: 20px;
+    padding: 40px;
   } 
   
 .navlink li {
     display: block;
     background-color: beige;
     float: left;
-    padding-left: 135px;
-    padding-right: 135px;
+    padding-left: 310px;
+    padding-right: 310px;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 5px;
