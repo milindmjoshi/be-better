@@ -9,20 +9,21 @@ body {
 }
 
 .main {
-    background-color: beige;
+    background-color: goldenrod;
     width: auto;
     height: 150px;
     font-size: 20px;
 }
 
 .main h3 {
-    background-color: beige;
+    background-color: goldenrod;
+    color: white;
     width: auto;
     height: 30px;
 }
 
 .main h1 {
-    background-color: bisque;
+    background-color: beige;
     width: auto;
     font-size: 50px;
     padding: 20px;
@@ -31,32 +32,15 @@ body {
     font-weight: 600;
 }
 
-.navlink ul {
-    background-color: lavender;
-    overflow: hidden;
-    padding: 40px;
-  } 
-  
-.navlink li {
-    display: block;
-    background-color: beige;
-    float: left;
-    padding-left: 310px;
-    padding-right: 310px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-radius: 5px;
-    border: 5px solid bisque;
-}
-
-.navlink li:hover {
-    background-color: bisque;
+.tile is-parent {
+    height: 500px;
+    width: auto;
 }
 
 footer {
     background-color: beige;
     width: auto;
-    border: 3px solid bisque;
+    border: 3px solid goldenrod;
     border-radius: 3px;
     text-align: center;
 }
