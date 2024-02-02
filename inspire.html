@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Be Better Inspire</title>
 </head>
 
@@ -14,11 +16,31 @@
      a date of access and log their activity-->
 
 <body>
-    <h2> Inspire!</h2>
-    <p> Check out these activities to get you movine! <br>
-        If you commit to the activity, click "I commit!" and gain a Be Better point to move you up on the score board!</p>
-        <button id="inspireNext"> Next please! </button> <button id="commit">I commit!</button>
-        <p id="activityView"> </p>
+
+    <div class="tile is-parent">
+        <article class="tile is-child notification is-warning">
+            <p class="title">Inspire Activity!</p>
+            <p id="inspireNext" class="subtitle"> Something to lift spirits</p>
+            <p>If you commit to the activity, click "I commit!" and gain a Be Better spot on the better board!</p>
+            <button id="inspireNextButton"> Next please! </button> <button id="commitButton">I commit!</button>
+            </figure>
+        </article>
+    </div>
+
+    <div class="table-container">
+        <table id="beBetterTable" class="table">
+            <thead>
+                <tr>
+                    <th id="beBetterUser">Username</th>
+                    <th id="commitPoints">Points</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+
     <script src="./assets/scripts/inspire.js"></script>
 </body>
+
 </html>
