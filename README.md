@@ -8,8 +8,11 @@ It has categories a user can chose from to explore:
 1. Inspire
 2. Smile
 3. Move
-4. Furry Friends
+4. Advice
+5. Furry Friends
 
+
+![Screenshot](./assets/images/be-better.png)
 
 
 ## Group Members
