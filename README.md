@@ -6,27 +6,39 @@ Be better is a web application that inspires, motivates, and provides outlets fo
 It has categories a user can chose from to explore:
 
 1. Inspire
-2. Fitness
-3. Smile
+2. Smile
+3. Move
+4. Advice
+5. Furry Friends
 
+
+![Screenshot](./assets/images/be-better.png)
 
 
 ## Group Members
+1. Tristan Magee
+2. Brittany Montanye
+3. Christian Vallejos
+4. Johnathan Fajardo
+5. Milind Joshi
 
-**Tristan Magee , Christian Vallejos** - Application landing page with links to pages
+**Tristan Magee** - Application HTML and CSS styling with Bulma CSS
  
-**Brittany Montanye** :star2: :metal: - Inspire page
+**Brittany Montanye** :star2: :metal: - Inspire Panel
 1. http://www.boredapi.com/api/activity
 
-**Jonathan Fajardo** - Fitness page
+**Jonathan Fajardo** - Move Panel
+1. https://youtube-trending.p.rapidapi.com/trending?country=US&type=Fitness
 
-**Milind Joshi**  -  Smile page
+**Christian Vallejos** - Advice Panel
+1. https://api.adviceslip.com/advice
+
+**Milind Joshi**  -  Smile page and Furry Friends Panel
 1. https://icanhazdadjoke.com/
+2. https://cataas.com/cat/says/hello
 
 
 ## Credit
-
-Group project with our own individual credit.
 
 ## License
 
