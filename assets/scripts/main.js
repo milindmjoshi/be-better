@@ -1,5 +1,6 @@
 console.log("Inside main.js");
 
+// Link to inspire page
 var inspireLink = document.querySelector(".inspire-link");
 
 inspireLink.addEventListener('click',function() {
@@ -8,15 +9,14 @@ inspireLink.addEventListener('click',function() {
 
 console.log(inspireLink);
 
+// Link to furry friends page 
+var furryLink = document.querySelector(".furry-link");
 
-
-var inspireLink = document.querySelector(".furry-link");
-
-inspireLink.addEventListener('click',function() {
+furryLink.addEventListener('click',function() {
     window.location = "furry.html";
 });
 
-console.log(furryLink)
+console.log(furryLink);
 
 
 
