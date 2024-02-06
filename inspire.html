@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>Be Better Inspire</title>
@@ -20,18 +19,26 @@
         <article class="tile is-child notification is-warning">
             <p class="title">Inspire Activity!</p>
             <p id="inspireNext" class="subtitle"> Something to lift spirits</p>
-            <p>If you commit to the activity, click "I commit!" and gain a Be Better spot on the better board!</p>
-            <button id="inspireNextButton"> Next please! </button> <button id="commitButton">I commit!</button>
+            <p>If you commit to the activity, click "commit" and gain a spot on the better board!</p>
+            <button id="inspireNextButton"> Next please! </button> 
             </figure>
         </article>
     </div>
-
+<!-- Be-Better Points Table input -->
     <div class="table-container">
+        
+        <label for="userName">Enter a user name:</label>
+        <input type="text" id="userName">
+        <button id="commitButton">Commit!</button>
+<!-- Be-Better Points display points -->
+        <p>Commit Points: <span id="commitPoints">0</span></p>
+<!-- Be-Better Points display Table -->
         <table id="beBetterTable" class="table">
             <thead>
                 <tr>
                     <th id="beBetterUser">Username</th>
                     <th id="commitPoints">Points</th>
+<!-- table points will be added via javascript append table -->
                 </tr>
             </thead>
             <tbody></tbody>

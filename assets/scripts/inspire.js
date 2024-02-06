@@ -1,86 +1,71 @@
 
 
-function inspireActivityRun() { fetch('http://www.boredapi.com/api/activity?participants=1&participants=1')
+function inspireActivityRun() {
+    fetch('http://www.boredapi.com/api/activity?participants=1&participants=1')
 
-    .then(function (res) { return res.json() })
-    .then(function (data) { 
-        console.log(data);
-        document.getElementById("inspireNext").innerText = data.activity;
-    });
+        .then(function (res) { return res.json() })
+        .then(function (data) {
+            console.log(data);
+            document.getElementById("inspireNext").innerText = data.activity;
+        });
 }
 inspireActivityRun();
 
+
+(function () {
     document.getElementById("inspireNextButton").addEventListener("click", inspireActivityRun);
-   
-function addTableRow() {
-    //prompt for name input//////////// fix to modal widget input
-    var beBetterUser = prompt("Enter a user name:");
 
-    //get the table tbody element
-    var tbody=document.querySelector('#beBetterTable tbody')
-    // var table = document.getElementById("beBetterTable");
-    // var tbody = table.getElementsByTagName("tbody")[0];
+    var commitCount = 0;
+    const commitPoints = document.getElementById('commitPoints');
+    const userNameInput = document.getElementById('userName');
+    const commitButton = document.getElementById('commitButton');
+    const tableBody = document.querySelector('#beBetterTable tbody')
 
-    // Create a new row
-    var newRow = document.createElement("tr");
+    commitButton.addEventListener('click', () => {
+        //get user name from the input box
+        var beBetterUser = userNameInput.value;
+        //  Update the commit count
+        commitCount++;
+        commitPoints.textContent = commitCount.toString();
+        //add the data to the local storage
+        const data = JSON.parse(localStorage.getItem('beBetterData')) || [];
 
-    // Create cells for the new row
-    var cell1=document.createElement("td");
-    var cell2=document.createElement('td');
+        // Find the existing user in the array
+        const existingUser = data.find(user => user.username === beBetterUser);
+        if (existingUser) {
+            //if user exists update their points
+            existingUser.points = commitCount;
+        } else {
+            //If the user doesn't exist, add new entry
+            data.push({ username: beBetterUser, points: 1 });
+        }
+        localStorage.setItem('beBetterData', JSON.stringify(data));
 
-    // Set the content of the cells
-
-    cell1.textContent = beBetterUser;
-    cell2.textContent = commitCount.toString();
-
-    //Append the cells to the new row
-    newRow.appendChild(cell1);
-    newRow.appendChild(cell2);
-
-    //Append new row to the tbody
-    tbody.appendChild(newRow);
-}
-var commitButton = document.getElementById("commitButton");
-
-commitButton.addEventListener("click", addTableRow);
-   
-var commitCount =1;
-
-// const commitlog= document.getElementById('commitButton');
-// const commitPoints= document.getElementById('commitPoints');
-
-commitButton.addEventListener('click', () => {
-    commitCount++;
-    commitPoints.textContent=commitCount.toString();
-});
-
-const data = [
-    {username: "", points:"" }
-];
-
-//function to populate data 
-
-function populateTable() {
-    const tableBody = document.querySelector('#beBetterTable tbody');
-    tableBody.innerHTML = ""; 
-
-    data.forEach((row) =>{
-        const newRow = document.createElement("tr");
-        const usernameCell = document.createElement("td");
-        const commitCountCell=document.createElement("td");
-
-        usernameCell.textContent = row.username;
-        commitCountCell.textContent = row.points.toString();
-
-        newRow.appendChild(usernameCell);
-        newRow.appendChild(commitCountCell);
-
-        tableBody.appendChild(newRow);
-
+        // refresh the table
+        populateTable();
     });
-}
 
-populateTable();
+    // function to populate data form local storage to the table
+    function populateTable() {
+        tableBody.innerHTML = "";
+        const data = JSON.parse(localStorage.getItem('beBetterData')) || [];
+        data.forEach((row) => {
+            const newRow = document.createElement("tr");
+            const usernameCell = document.createElement("td");
+            const commitCountCell = document.createElement("td");
+
+            usernameCell.textContent = row.username;
+            commitCountCell.textContent = row.points.toString();
+
+            newRow.appendChild(usernameCell);
+            newRow.appendChild(commitCountCell);
+
+            tableBody.appendChild(newRow);
+
+        });
+    }
+    // initial table population
+    populateTable();
 
 
-    
+})();
