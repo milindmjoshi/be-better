@@ -1,25 +1,25 @@
 
 
-function inspireActivityRun() {
-    fetch('http://www.boredapi.com/api/activity?participants=1&participants=1')
+// function inspireActivityRun() {
+//     fetch('http://www.boredapi.com/api/activity?participants=1')
 
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-            document.getElementById("inspireNext").innerText = data.activity;
-            //save the last activity clicked to local storage
-            localStorage.setItem('lastClickedActivity', data.activity);
-        });
-}
+//         .then(res => res.json())
+//         .then(data => {
+//             console.log(data);
+//             document.getElementById("inspireNext").innerText = data.activity;
+//             //save the last activity clicked to local storage
+//             localStorage.setItem('lastClickedActivity', data.activity);
+//         });
+// }
 
-inspireActivityRun();
+// inspireActivityRun();
 
 
 (function () {
 
     //Function to fetch initial activity data
     function fetchInitialActivity() {
-        fetch('http://www.boredapi.com/api/activity?participants=1&participants=1')
+        fetch('http://www.boredapi.com/api/activity?participants=1')
             .then(res => res.json())
             .then(data => {
                 console.log(data);
@@ -40,7 +40,7 @@ inspireActivityRun();
     const commitPoints = document.getElementById('commitPoints');
     const userNameInput = document.getElementById('userName');
     const commitButton = document.getElementById('commitButton');
-    const tableBody = document.querySelector('#beBetterTable tbody')
+    const tableBody = document.querySelector('#beBetterTable tbody');
 
     commitButton.addEventListener('click', () => {
         //get user name from the input box
@@ -51,9 +51,10 @@ inspireActivityRun();
 
         //get last clicked activity from local storage
         const lastClickedActivity = localStorage.getItem('lastClickedActivity') || 'No activity';
-
+        console.log(lastClickedActivity);
         //add the data to the local storage
         const data = JSON.parse(localStorage.getItem('beBetterData')) || [];
+        console.log(data);
 
         // Find the existing user in the array
         const existingUser = data.find(user => user.username === beBetterUser);
@@ -63,7 +64,7 @@ inspireActivityRun();
             existingUser.lastClickedActivity = lastClickedActivity;
         } else {
             //If the user doesn't exist, add new entry
-            data.push({ username: beBetterUser, points: 1 });
+            data.push({ username: beBetterUser, points: 1, lastClickedActivity });
         }
         localStorage.setItem('beBetterData', JSON.stringify(data));
 
@@ -98,5 +99,7 @@ inspireActivityRun();
     // initial table population
     populateTable();
 })();
+// localStorage.clear();
+
 
 
