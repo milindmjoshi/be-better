@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../UCF-VIRT-FSF-PT-12-2023-U-LOLC"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "UCF-VIRT-FSF-PT-12-2023-U-LOLC"
+	}
+}
