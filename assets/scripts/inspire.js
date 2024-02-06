@@ -8,16 +8,33 @@ function inspireActivityRun() {
             console.log(data);
             document.getElementById("inspireNext").innerText = data.activity;
             //save the last activity clicked to local storage
-            localStorage.setItem('lastClickedActivity',data.activity);
+            localStorage.setItem('lastClickedActivity', data.activity);
         });
 }
-
 
 inspireActivityRun();
 
 
 (function () {
-    document.getElementById("inspireNextButton").addEventListener("click", inspireActivityRun);
+
+    //Function to fetch initial activity data
+    function fetchInitialActivity() {
+        fetch('http://www.boredapi.com/api/activity?participants=1&participants=1')
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById("inspireNext").innerText = data.activity;
+                //save last activity to loal storage
+                localStorage.setItem('lastClickedActivity', data.activity);
+            });
+    }
+    //fetch initial activity on page load
+    fetchInitialActivity();
+
+    document.getElementById("inspireNextButton").addEventListener("click", ()=> {
+        //fetch activity on button push
+        fetchInitialActivity();
+    });
 
     var commitCount = 0;
     const commitPoints = document.getElementById('commitPoints');
@@ -43,7 +60,7 @@ inspireActivityRun();
         if (existingUser) {
             //if user exists update their points
             existingUser.points = commitCount;
-            existingUser.lastClickedActivity=lastClickedActivity;
+            existingUser.lastClickedActivity = lastClickedActivity;
         } else {
             //If the user doesn't exist, add new entry
             data.push({ username: beBetterUser, points: 1 });
@@ -58,17 +75,17 @@ inspireActivityRun();
     function populateTable() {
         tableBody.innerHTML = "";
         const data = JSON.parse(localStorage.getItem('beBetterData')) || [];
-       
-       
+
+
         data.forEach((row) => {
             const newRow = document.createElement("tr");
             const usernameCell = document.createElement("td");
             const commitCountCell = document.createElement("td");
-            const lastClickedActivityCell=document.createElement("td");
+            const lastClickedActivityCell = document.createElement("td");
 
             usernameCell.textContent = row.username;
             commitCountCell.textContent = row.points.toString();
-            lastClickedActivityCell.textContent=row.lastClickedActivity || '';
+            lastClickedActivityCell.textContent = row.lastClickedActivity || '';
 
             newRow.appendChild(usernameCell);
             newRow.appendChild(commitCountCell);
