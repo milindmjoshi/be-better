@@ -37,11 +37,10 @@ body {
     box-shadow: 3px 3px 3px 3px gray;
 }
 
-.furry-link:hover {
-    color: white;
+.favorite-link:hover {
+    color: black;
     cursor: grab;
 }
-
 .inspire-link:hover {
     color: white;
     cursor: grab;
