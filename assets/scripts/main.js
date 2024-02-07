@@ -9,14 +9,16 @@ inspireLink.addEventListener('click',function() {
 
 console.log(inspireLink);
 
-// Link to furry friends page 
-var furryLink = document.querySelector(".furry-link");
 
-furryLink.addEventListener('click',function() {
-    window.location = "furry.html";
+console.log("Inside main.js");
+
+// Link to favorite page
+var favoriteLink = document.querySelector(".favorite-link");
+
+favoriteLink.addEventListener('click',function() {
+    window.location = "favorite.html";
 });
 
-console.log(furryLink);
-
+console.log(favoriteLink);
 
 
