@@ -1,10 +1,15 @@
 var api = 'https://api.adviceslip.com/advice';
-var advice = document.querySelector("be nice")
+var advicetile = document.querySelector(".advice")
+console.log(advicetile) 
 
-function setadvice(data) {
-advicetile.textcontext = data.advice 
+function setadvice(data) 
+{
+console.log("in set advice data is :"+ data);
+advicetile.textContent = data 
 
 
+
+}
 
 
 fetch(api)
@@ -13,7 +18,7 @@ fetch(api)
   })
   .then(function (data) {
     console.log(data.slip.advice);
-    advice = data.slip.advice 
+    setadvice(data.slip.advice)
   });
 
 
