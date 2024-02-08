@@ -1,20 +1,4 @@
 
-
-// function inspireActivityRun() {
-//     fetch('http://www.boredapi.com/api/activity?participants=1')
-
-//         .then(res => res.json())
-//         .then(data => {
-//             console.log(data);
-//             document.getElementById("inspireNext").innerText = data.activity;
-//             //save the last activity clicked to local storage
-//             localStorage.setItem('lastClickedActivity', data.activity);
-//         });
-// }
-
-// inspireActivityRun();
-
-
 (function () {
 
     //Function to fetch initial activity data
@@ -31,7 +15,7 @@
     //fetch initial activity on page load
     fetchInitialActivity();
 
-    document.getElementById("inspireNextButton").addEventListener("click", ()=> {
+    document.getElementById("inspireNextButton").addEventListener("click", () => {
         //fetch activity on button push
         fetchInitialActivity();
     });
@@ -91,7 +75,6 @@
             newRow.appendChild(usernameCell);
             newRow.appendChild(commitCountCell);
             newRow.appendChild(lastClickedActivityCell);
-
             tableBody.appendChild(newRow);
 
         });

@@ -3,6 +3,14 @@
     margin: 0;
 }
 
+#inspireGif {
+    border-radius: 25px;
+}
+
+#furryImage{
+    border-radius: 25px;
+}
+
 body {
     background-color: whitesmoke;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;

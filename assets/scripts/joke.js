@@ -2,7 +2,7 @@ var joketile = document.querySelector(".dadjoke");
 
 function setJoke(data){
     joketile.textContent = data.joke;
-    joketile.setAttribute("style", "color:brown; font-size: 25px; font-family: Cambria");
+    joketile.setAttribute("style", "color:yellow; font-size: 25px; font-family: Cambria");
   }
 
 var jokeObject = fetch('https://icanhazdadjoke.com/',{
