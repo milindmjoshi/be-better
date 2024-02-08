@@ -3,14 +3,15 @@ var furrytile = document.querySelector("#furryImage");
 var funnySayings = 
   [
     "Don't hate me because I am beautiful",
-    "Today is a good day to have some fun",
+    "Have some fun",
     "Hello",
     "More beer please",
     "Be the best you can be",
     "You too can be great",
     "Its a tough job",
     "Dont you wish your girlfriend was hot like me",
-    "I'm amazing"
+    "I'm amazing",
+    "You can do it!"
   ]
 
 function randomSaying(){
