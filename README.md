@@ -39,6 +39,7 @@ It has categories a user can chose from to explore:
 
 
 ## Credit
+https://icons8.com/icons/set/heart
 
 ## License
 
