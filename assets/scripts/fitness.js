@@ -1,19 +1,21 @@
 var exerciseTile = document.querySelector("#exercise-container")
 
 function displayExercises(exercises) {
-    exerciseTile.innerHTML = ""; //clear any previous content
-    exercises.forEach(function(exercise){
+        var randomIndex = Math.floor(Math.random() * exercises.length);
+        var randomExercise = exercises[randomIndex]
+        
         var exerciseElement = document.createElement("div");
         exerciseElement.innerHTML = `
-        <h3>${exercise.name}</h3>
-        <p>Type: ${exercise.type}</p>
-        <p>Muscle: ${exercise.muscle}</p>
-        <p>Equipment: ${exercise.equipment}</p>
-        <p>Difficulty: ${exercise.difficulty}</p>
-        <p>Instructions: ${exercise.instructions}</p>
+        <h2 style ="color: teal;">${randomExercise.name}</h2>
+        <p style ="color: teal;">Type: ${randomExercise.type}</p>
+        <p style ="color: teal;">Muscle: ${randomExercise.muscle}</p>
+        <p style ="color: teal;">Equipment: ${randomExercise.equipment}</p>
+        <p style ="color: teal;">Difficulty: ${randomExercise.difficulty}</p>
+        <p style ="color: teal;">Instructions: ${randomExercise.instructions}</p>
     `;
+
+    exerciseTile.innerHTML = ""; //clear any previous content
     exerciseTile.appendChild(exerciseElement);
-    });
 }
 
 fetch('https://api.api-ninjas.com/v1/exercises?type=cardio&difficulty=beginner', {
