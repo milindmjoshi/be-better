@@ -6,12 +6,12 @@ function displayExercises(exercises) {
         
         var exerciseElement = document.createElement("div");
         exerciseElement.innerHTML = `
-        <h2 style ="color: teal;">${randomExercise.name}</h2>
-        <p style ="color: teal;">Type: ${randomExercise.type}</p>
-        <p style ="color: teal;">Muscle: ${randomExercise.muscle}</p>
-        <p style ="color: teal;">Equipment: ${randomExercise.equipment}</p>
-        <p style ="color: teal;">Difficulty: ${randomExercise.difficulty}</p>
-        <p style ="color: teal;">Instructions: ${randomExercise.instructions}</p>
+        <h2 style ="color: gold; font-size: 20px">${randomExercise.name}</h2>
+        <p><span style ="color: gold;">Type:</span> ${randomExercise.type}</p>
+        <p><span style ="color: gold;">Muscle:</span> ${randomExercise.muscle}</p>
+        <p><span style ="color: gold;">Equipment:</span> ${randomExercise.equipment}</p>
+        <p><span style ="color: gold;">Difficulty:</span> ${randomExercise.difficulty}</p>
+        <p><span style ="color: gold;">Instructions:</span> ${randomExercise.instructions}</p>
     `;
 
     exerciseTile.innerHTML = ""; //clear any previous content
