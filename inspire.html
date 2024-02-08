@@ -19,35 +19,42 @@
         <article class="tile is-child notification is-warning">
             <p class="title">Inspire Activity!</p><br>
             <p id="inspireNext" class="subtitle"> Something to lift spirits</p>
+
             <button id="inspireNextButton" class="button"> Next activity, please! </button> <br> <br>
             <p>If you want to commit to this activity, put in a username and click "commit" below!<br>
                 Do this and you will gain a point on the better board while also saving your progress for later!</p>
+            <img id="inspire-avatar"
+                src="https://media.giphy.com/media/hvvmoaucfhXrvbyPK5/giphy.gif?cid=790b7611lnh7g981nuz7la1yu0sbgfvc6q2vllff1s3rynum&ep=v1_stickers_search&rid=giphy.gif&ct=s"
+                alt="avatar for inspiration">
+            <img>
+            <p>If you want to commit to this activity, click "commit" below!<br>
+                You will gain a point on the better board and it will log your progress!</p>
 
-            <img id="inspire" src="https://media.giphy.com/media/hvvmoaucfhXrvbyPK5/giphy.gif?cid=790b7611lnh7g981nuz7la1yu0sbgfvc6q2vllff1s3rynum&ep=v1_stickers_search&rid=giphy.gif&ct=s" alt="avatar for inspiration"><img>
 
+            <!-- Be-Better Points Table input -->
+            <div class="table-container">
+
+                <label for="userName">Enter a user name:</label>
+                <input type="text" id="userName">
+                <button id="commitButton">Commit!</button>
+                <!-- Be-Better Points display points -->
+                <p>Commit Points: <span id="commitPoints">0</span></p>
+                <!-- Be-Better Points display Table -->
+                <table id="beBetterTable" class="table">
+                    <thead>
+                        <tr>
+                            <th id="beBetterUser">Username</th>
+                            <th id="commitPoints">Points</th>
+                            <th id="lastClickedActivity">Activity</th>
+                            <!-- table points will be added via javascript append table -->
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
         </article>
     </div>
-<!-- Be-Better Points Table input -->
-    <div class="table-container">
-        
-        <label for="userName">Enter a user name:</label>
-        <input type="text" id="userName">
-        <button id="commitButton">Commit!</button>
-<!-- Be-Better Points display points -->
-        <p>Commit Points: <span id="commitPoints">0</span></p>
-<!-- Be-Better Points display Table -->
-        <table id="beBetterTable" class="table">
-            <thead>
-                <tr>
-                    <th id="beBetterUser">Username</th>
-                    <th id="commitPoints">Points</th>
-                    <th id="lastClickedActivity">Activity</th>
-<!-- table points will be added via javascript append table -->
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-    </div>
+
     <a class="inspire-link" href="./index.html">Home</a>
     <script src="./assets/scripts/inspire.js"></script>
 </body>
