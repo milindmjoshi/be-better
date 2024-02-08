@@ -30,4 +30,19 @@ favoriteLink.addEventListener('click',function() {
 
 console.log(favoriteLink);
 
+// add hover text over heard
+var hovertextp = document.querySelector("#heart-hover-text");
+var hearticon = document.querySelector("#heart-joke");
+console.log(hovertextp);
+console.log(hearticon);
+
+hearticon.addEventListener('mouseover',()=>{
+    console.log("mouseover");
+    hovertextp.style.visibility = "visible";
+});
+hearticon.addEventListener('mouseout',()=>{
+    console.log("mouseout");
+    hovertextp.style.visibility = "hidden";
+});
+
 
