@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+
 #inspireGif {
     border-radius: 25px;
 }
@@ -49,9 +50,23 @@ body {
     color: black;
     cursor: grab;
 }
+
 .inspire-link:hover {
     color: white;
     cursor: grab;
+}
+
+.table-container {
+    background-color: whitesmoke;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 3px 3px 3px 3px gray;
+}
+
+#inspire-avatar {
+    height: 500px;
+    width: 500px;
+    float: right;
 }
 
 .tile .title {
@@ -67,3 +82,4 @@ footer {
     border-radius: 3px;
     text-align: center;
 }
+
