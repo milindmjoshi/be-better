@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-#furryImage{
+#furryImage {
     border-radius: 25px;
 }
 
@@ -45,6 +45,7 @@ body {
     color: black;
     cursor: grab;
 }
+
 .inspire-link:hover {
     color: white;
     cursor: grab;
@@ -63,3 +64,4 @@ footer {
     border-radius: 3px;
     text-align: center;
 }
+
