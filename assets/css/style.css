@@ -3,6 +3,15 @@
     margin: 0;
 }
 
+.inspireActivity {
+    background-color: rgb(189, 219, 222);
+    color: rgb(78, 78, 237);
+    border-radius: 25px;
+    margin: 30px;
+    margin-bottom: 100px;
+    font-size: x-large;
+    text-align: center;
+}
 
 #inspireGif {
     border-radius: 25px;
