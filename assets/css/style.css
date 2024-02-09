@@ -60,7 +60,6 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-
 .main h3 {
     background-color: rgb(189, 219, 222);
     color: rgb(12, 101, 110);
@@ -92,7 +91,7 @@ body {
 }
 
 .favorite-link:hover {
-    color: black;
+    color: rgb(60, 60, 60);
     cursor: grab;
 }
 
