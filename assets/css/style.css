@@ -3,6 +3,21 @@
     margin: 0;
 }
 
+.betterFont {
+    font-family: "Dawning of a New Day", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+#navTop {
+    font-size: 40px;
+}
+
+#betterTitle {
+    font-style: bold;
+    font-weight: 900;
+    font-size: 60px;
+}
+
 .inspireActivity {
     background-color: rgb(189, 219, 222);
     color: rgb(78, 78, 237);
@@ -113,3 +128,7 @@ footer {
     text-align: center;
 }
 
+.advice-link:hover {
+    color: aquamarine;
+    cursor: grab;
+}

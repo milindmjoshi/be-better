@@ -1,78 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title> Be Better </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title> Be Better </title>
 </head>
 
 <body>
-    <header class="main">
-        <h3>Today is the best day to try and... </h3>
-        <h1><strong> Be Better! </strong></h1>
-    </header>
+  <header class="main">
+    <h3 class="betterFont" id="navTop">Today is the best day to try and... </h3>
+    <h1 class="betterFont" id="betterTitle"><strong> Be Better! </strong></h1>
+  </header>
 
-    <div class="card">
-      <div class="tile is-parent">
-        <article class="tile is-child notification is-warning">
-          <p class="title inspire-link">Inspire</p>
-          <p class="subtitle">Click for the best place to find inspiration!</p>
-          <img id="inspireGif" alt="Inspiration GIF"></img>
-         </figure>
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child notification is-danger">
-          <p class="title">Smile</p>
-          <p class="subtitle dadjoke">Something to make the spirits last</p>
-          <img id="heart-joke" src="./assets/images/heart2.png" style="width:25px;height:25px;">
-          <p id="heart-hover-text">Click to save to favorites</p>
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child notification is-warning">
-          <p class="title">Advice</p>
-          <p class="subtitle advice">never give up!</p>
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child notification is-info">
-          <p class="title">Move</p>
-          <p class="subtitle"> "A healthy Soul lives in a healthy Body and Mind"</p>
-          <div id ="exercise-container"></div>
-          <div style="width:100%;height:0;padding-bottom:100%;position:relative;">
-            <iframe src="https://giphy.com/embed/vF25I06jdODgA" width="80%" height="400" frameBorder="0"></iframe></div><p><a href="https://giphy.com/gifs/jasonclarke-dog-animated-gif-vF25I06jdODgA"></a></p>
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child notification is-warning">
-          <p class="title">Furry Friends</p>
-          <img id ="furryImage"></img>
-        </article>
-      </div>
-      <div class="tile is-parent">
-        <article class="tile is-child notification is-primary">
-          <p class="title favorite-link">Favorites</p>
-          <p class="subtitle advice">Place to save it all</p>
-        </article>
-      </div>
+  <div class="card">
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-warning">
+        <p class="title inspire-link">Inspire</p>
+        <p class="subtitle">Click for the best place to find inspiration!</p>
+        <img id="inspireGif" alt="Inspiration GIF"></img>
+        </figure>
+      </article>
     </div>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-danger">
+        <p class="title">Smile</p>
+        <p class="subtitle dadjoke">Something to make the spirits last</p>
+        <img id="heart-joke" src="./assets/images/heart2.png" style="width:25px;height:25px;">
+        <p id="heart-hover-text">Click to save to favorites</p>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-warning">
+        <p class="title">Advice</p>
+        <p class="subtitle advice">never give up!</p>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-info">
+        <p class="title">Move</p>
+        <p class="subtitle"> "A healthy Soul lives in a healthy Body and Mind"</p>
+        <div id ="exercise-container"></div>
+        <div style="width:100%;height:0;padding-bottom:100%;position:relative;">
+          <iframe src="https://giphy.com/embed/vF25I06jdODgA" width="80%" height="400" frameBorder="0"></iframe></div><p><a href="https://giphy.com/gifs/jasonclarke-dog-animated-gif-vF25I06jdODgA"></a></p>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-warning">
+        <p class="title">Furry Friends</p>
+        <img id="furryImage"></img>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-primary">
+        <p class="title favorite-link">Favorites</p>
+        <p class="subtitle advice">Place to save it all</p>
+      </article>
+    </div>
+  </div>
 
-    <footer>
-        <h4> Product of the 'Numbers Team' </h4>
-        <h5> Made in 2024 </h5>
-    </footer>
+  <footer>
+    <h4> Product of the 'Numbers Team' </h4>
+    <h5> Made in 2024 </h5>
+  </footer>
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 
-    <script src="./assets/scripts/main.js"></script>
-    <script src="./assets/scripts/joke.js"></script>
-    <script src="./assets/scripts/fitness.js"></script>
-    <script src="./assets/scripts/furryfriends.js"></script>
-    <script src="./assets/scripts/advice.js"></script>
-    
+  <script src="./assets/scripts/main.js"></script>
+  <script src="./assets/scripts/joke.js"></script>
+  <script src="./assets/scripts/fitness.js"></script>
+  <script src="./assets/scripts/furryfriends.js"></script>
+  <script src="./assets/scripts/advice.js"></script>
+
 </body>
+
 </html>
