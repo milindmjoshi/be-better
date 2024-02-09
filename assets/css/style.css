@@ -128,3 +128,7 @@ footer {
     text-align: center;
 }
 
+.advice-link:hover {
+    color: aquamarine;
+    cursor: grab;
+}
