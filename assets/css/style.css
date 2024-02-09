@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+.hover:hover {
+    transform: scale(1.03);
+    }
+
 .betterFont {
     font-family: "Dawning of a New Day", cursive;
     font-weight: 700;
