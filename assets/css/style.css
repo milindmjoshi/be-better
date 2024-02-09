@@ -60,6 +60,9 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.hover:hover {
+    transform: scale(1.03);
+}
 
 .main h3 {
     background-color: rgb(189, 219, 222);
