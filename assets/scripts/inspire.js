@@ -3,7 +3,7 @@
 
     //Function to fetch initial activity data
     function fetchInitialActivity() {
-        fetch('http://www.boredapi.com/api/activity?participants=1')
+        fetch('https://www.boredapi.com/api/activity?participants=1')
             .then(res => res.json())
             .then(data => {
                 console.log(data);
