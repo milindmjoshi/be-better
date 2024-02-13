@@ -4,7 +4,7 @@ var fav = document.querySelector(".favorites");
 var jokes = localStorage.getItem("jokes");
 
 // split jokes string by , into a jokes array
-var jokesArray=(jokes.split(","));
+var jokesArray=(jokes.split("+"));
 
 var hr = document.createElement("hr");
 fav.appendChild(hr);
@@ -42,7 +42,7 @@ function deleteFavorite(joke){
     if (index != -1){
         jokesArray.splice(index,1);
     }
-    localStorage.setItem("jokes",jokesArray.join(","));
+    localStorage.setItem("jokes",jokesArray.join("+"));
     document.location.reload();
 
 }
