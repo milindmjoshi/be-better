@@ -28,7 +28,7 @@ It has categories a user can chose from to explore:
 1. http://www.boredapi.com/api/activity
 
 **Jonathan Fajardo** - Move Panel
-1. https://youtube-trending.p.rapidapi.com/trending?country=US&type=Fitness
+1. https://api-ninjas.com/api/exercises
 
 **Christian Vallejos** - Advice Panel
 1. https://api.adviceslip.com/advice
