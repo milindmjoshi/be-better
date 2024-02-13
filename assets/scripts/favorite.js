@@ -3,8 +3,10 @@ var fav = document.querySelector(".favorites");
 
 var jokes = localStorage.getItem("jokes");
 
+// split jokes string by , into a jokes array
 var jokesArray=(jokes.split(","));
 
+// for each joke create p dom element and append 
 jokesArray.forEach(joke => {
     if (joke != ""){
         var p = document.createElement("p");
@@ -29,6 +31,7 @@ jokesArray.forEach(joke => {
     }
 });
 
+// delete joke from favorites if it exists
 function deleteFavorite(joke){
     var index = jokesArray.indexOf(joke);
     console.log("deleting index: " + index);
