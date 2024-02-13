@@ -6,6 +6,9 @@ var jokes = localStorage.getItem("jokes");
 // split jokes string by , into a jokes array
 var jokesArray=(jokes.split(","));
 
+var hr = document.createElement("hr");
+fav.appendChild(hr);
+
 // for each joke create p dom element and append 
 jokesArray.forEach(joke => {
     if (joke != ""){
@@ -18,6 +21,7 @@ jokesArray.forEach(joke => {
         image.style.display = 'inline';
         image.style.float = 'right';
         image.setAttribute("src","../be-better/assets/images/trash.png");
+        image.setAttribute("id","trash-icon");
         image.addEventListener('click',()=>{
             //alert("delete me");
             deleteFavorite(joke);

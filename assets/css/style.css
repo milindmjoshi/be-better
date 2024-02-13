@@ -45,6 +45,11 @@
     background-color: white;
 }
 
+#trash-icon:hover {
+    cursor: grab;
+    background-color: white;
+}
+
 #heart-hover-text{
     visibility: hidden;
     font-size: 20px;
