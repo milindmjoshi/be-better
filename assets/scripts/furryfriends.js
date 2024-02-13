@@ -19,7 +19,7 @@ function randomSaying(){
   }
 
 //fetch('https://cataas.com/cat/says/hello')
-fetch("https://cataas.com/cat/says/" + randomSaying() + "?fontSize=30&fontColor=yellow")
+fetch("https://corsproxy.io/?https://cataas.com/cat/says/" + randomSaying() + "?fontSize=30&fontColor=yellow")
   .then(function (response) {
     return response.blob();
   })
