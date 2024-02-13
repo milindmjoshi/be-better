@@ -7,7 +7,7 @@ if (jokes == null ){
 }
 
 jokeheart.addEventListener('click',()=>{
-  alert('Saved to Favorites');
+  //alert('Saved to Favorites');
   var joke = joketile.textContent.trim();
   jokes = jokes.concat(joke + ",");
   localStorage.setItem("jokes",jokes);
