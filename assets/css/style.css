@@ -131,7 +131,13 @@ footer {
     text-align: center;
 }
 
-.advice-link:hover {
-    color: aquamarine;
+#adviceTitle:hover {
+    color: aqua;
     cursor: grab;
+}
+
+
+.yolo {
+    border-radius: 25px;
+    
 }

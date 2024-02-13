@@ -22,7 +22,3 @@ fetch(api)
   });
 
 
-
-
-
-//hi my name is chris
