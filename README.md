@@ -7,9 +7,10 @@ It has categories a user can chose from to explore:
 
 1. Inspire
 2. Smile
-3. Move
-4. Advice
+3. Advice
+4. Move
 5. Furry Friends
+6. Favorites
 
 
 ![Screenshot](./assets/images/be-better.png)
@@ -40,6 +41,9 @@ It has categories a user can chose from to explore:
 
 ## Credit
 https://icons8.com/icons/set/heart
+
+## Website Link
+https://milindmjoshi.github.io/be-better/
 
 ## License
 
