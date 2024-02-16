@@ -1,6 +1,5 @@
 
 (function () {
-
     //Function to fetch initial activity data
     function fetchInitialActivity() {
         fetch('https://www.boredapi.com/api/activity?participants=1')
@@ -20,9 +19,10 @@
         fetchInitialActivity();
     });
 
-    var commitCount = 0;
+
     const commitPoints = document.getElementById('commitPoints');
     const userNameInput = document.getElementById('userName');
+
     const commitButton = document.getElementById('commitButton');
     const tableBody = document.querySelector('#beBetterTable tbody');
 
@@ -30,38 +30,37 @@
         //get user name from the input box
         var beBetterUser = userNameInput.value;
         //  Update the commit count
+        var commitCount = parseInt(document.getElementById('commitPoints').textContent);
         commitCount++;
         commitPoints.textContent = commitCount.toString();
-
         //get last clicked activity from local storage
         const lastClickedActivity = localStorage.getItem('lastClickedActivity') || 'No activity';
         console.log(lastClickedActivity);
         //add the data to the local storage
         const data = JSON.parse(localStorage.getItem('beBetterData')) || [];
         console.log(data);
-
         // Find the existing user in the array
         const existingUser = data.find(user => user.username === beBetterUser);
         if (existingUser) {
-            //if user exists update their points
-            existingUser.points = commitCount;
+            //if user exists add to their points, 1 point --- needed fix
+            existingUser.points++;
             existingUser.lastClickedActivity = lastClickedActivity;
         } else {
             //If the user doesn't exist, add new entry
             data.push({ username: beBetterUser, points: 1, lastClickedActivity });
         }
         localStorage.setItem('beBetterData', JSON.stringify(data));
-
         // refresh the table
         populateTable();
+        //reset commit count to 0 after commit button is pushed 
+        commitCount = 0;
+        commitPoints.textContent = commitCount.toString();
     });
 
     // function to populate data form local storage to the table
     function populateTable() {
         tableBody.innerHTML = "";
         const data = JSON.parse(localStorage.getItem('beBetterData')) || [];
-
-
         data.forEach((row) => {
             const newRow = document.createElement("tr");
             const usernameCell = document.createElement("td");
@@ -79,10 +78,8 @@
 
         });
     }
-    // initial table population
-    populateTable();
-})();
+        // initial table population
+        populateTable();
+
 // localStorage.clear();
-
-
-
+})();
